@@ -16,14 +16,14 @@ print("=" * 80)
 print("PROBLEMA DEL EXCURSIONISTA - MOCHILA 0/1 (KNAPSACK)")
 print("=" * 80)
 
-print("\n📦 DATA DEL PROBLEMA:")
+print("\nDATA DEL PROBLEMA:")
 data_df = pd.DataFrame({
     'Artículo': articulos,
     'Peso (libras)': pesos,
     'Valor': valores
 })
 print(data_df.to_string(index=False))
-print(f"\n🎒 Peso máximo que puede cargar: {peso_maximo} libras")
+print(f"\nPeso máximo que puede cargar: {peso_maximo} libras")
 
 # ==================== MODELO PRIMAL ====================
 print("\n" + "=" * 80)
@@ -71,7 +71,7 @@ solucion = []
 peso_total = 0
 valor_total = 0
 
-print("\n🎒 Artículos a llevar:")
+print("\nArtículos a llevar:")
 print("-" * 80)
 
 for i in range(5):
@@ -105,7 +105,7 @@ for i in range(5):
 solucion_df = pd.DataFrame(tabla_solucion)
 print("\n" + solucion_df.to_string(index=False))
 
-print("\n💡 OBSERVACIONES:")
+print("\nOBSERVACIONES:")
 print(f"  • Se seleccionan {len(solucion)} artículos")
 print(f"  • Peso utilizado: {peso_total}/{peso_maximo} libras ({peso_total*100//peso_maximo}%)")
 print(f"  • Espacio disponible: {peso_maximo - peso_total} libras")

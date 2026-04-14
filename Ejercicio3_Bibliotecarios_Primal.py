@@ -20,15 +20,15 @@ print("=" * 90)
 print("EJERCICIO 3: PROBLEMA DE BIBLIOTECARIOS - TURNOS DE 8 HORAS")
 print("=" * 90)
 
-print("\n📚 DATA DEL PROBLEMA:")
+print("\nDATA DEL PROBLEMA:")
 data_df = pd.DataFrame({
     'Período': ['1', '2', '3', '4', '5', '6'],
     'Horario': ['12 AM - 4 AM', '4 AM - 8 AM', '8 AM - 12 PM', '12 PM - 4 PM', '4 PM - 8 PM', '8 PM - 12 AM'],
     'Demanda Mínima': demanda
 })
 print(data_df.to_string(index=False))
-print(f"\n🕒 Cada bibliotecario trabaja {turno_duracion} horas consecutivas ({periodos_por_turno} períodos)")
-print(f"📅 Total de períodos en el día: 6")
+print(f"\nCada bibliotecario trabaja {turno_duracion} horas consecutivas ({periodos_por_turno} períodos)")
+print(f"Total de períodos en el día: 6")
 
 # ==================== MODELO PRIMAL ====================
 print("\n" + "=" * 90)
