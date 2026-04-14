@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -427,19 +427,19 @@
     <div class="container">
         <!-- NAV BUTTONS -->
         <div class="nav-buttons">
-            <a href="home.html" style="display: inline-block; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: bold; background: #f39c12; color: white; transition: all 0.3s ease; margin-right: 10px;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">🏠 INICIO</a>
-            <a href="index.html" class="btn-staffing">📊 Ej. 1: Staffing</a>
-            <span style="font-weight: bold; color: #f5576c;">🎒 Ej. 2: Mochila ← AQUÍ</span>
-            <a href="ejercicio3_bibliotecarios.html" class="btn-bibliotecarios">📚 Ej. 3: Bibliotecarios</a>
-            <a href="ejercicio4_dual.html" class="btn-dual">🔄 Ej. 4: Dual</a>
+            <a href="home.html" style="display: inline-block; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: bold; background: #f39c12; color: white; transition: all 0.3s ease; margin-right: 10px;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">INICIO</a>
+            <a href="index.html" class="btn-staffing"> Ej. 1: Staffing</a>
+            <span style="font-weight: bold; color: #f5576c;"> Ej. 2: Mochila ← AQUÍ</span>
+            <a href="ejercicio3_bibliotecarios.html" class="btn-bibliotecarios"> Ej. 3: Bibliotecarios</a>
+            <a href="ejercicio4_dual.html" class="btn-dual"> Ej. 4: Dual</a>
         </div>
 
         <!-- HEADER -->
         <div class="header">
-            <h1>🎒 Problema del Excursionista - Mochila 0/1</h1>
+            <h1>Problema del Excursionista - Mochila 0/1</h1>
             <p>Maximizar Valor sin Exceder Restricción de Peso</p>
             <div class="highlight-solution">
-                💡 Valor Máximo: <span style="color: #27ae60;">130 Unidades</span> | Peso: <span style="color: #27ae60;">58/60 libras</span>
+                Valor Máximo: <span style="color: #27ae60;">130 Unidades</span> | Peso: <span style="color: #27ae60;">58/60 libras</span>
             </div>
         </div>
 
@@ -447,7 +447,7 @@
         <div class="content">
             <!-- SECCIÓN 1: DESCRIPCIÓN -->
             <div class="section">
-                <h2>📋 Descripción del Problema</h2>
+                <h2>Descripción del Problema</h2>
                 <p style="font-size: 1.05em; line-height: 1.8; color: #444; margin-bottom: 20px;">
                     Un excursionista planea salir de campamento y quiere llevar 5 artículos consigo. 
                     Sin embargo, tiene una restricción: <strong>puede cargar como máximo 60 libras</strong>. 
@@ -455,7 +455,7 @@
                     de artículos que maximiza el valor total sin exceder el peso límite?</strong>
                 </p>
 
-                <h3>📦 Artículos Disponibles</h3>
+                <h3>Artículos Disponibles</h3>
                 <table>
                     <thead>
                         <tr>
@@ -476,7 +476,7 @@
                             <td><strong>2</strong></td>
                             <td>23</td>
                             <td>60</td>
-                            <td><strong>2.609</strong> ⭐</td>
+                            <td><strong>2.609</strong></td>
                         </tr>
                         <tr>
                             <td><strong>3</strong></td>
@@ -506,7 +506,7 @@
 
             <!-- SECCIÓN 2: SOLUCIÓN ÓPTIMA -->
             <div class="section">
-                <h2>✅ Solución Óptima</h2>
+                <h2>Solución Óptima</h2>
 
                 <div class="grid-3">
                     <div class="card">
@@ -526,7 +526,7 @@
                     </div>
                 </div>
 
-                <h3>🎒 Mochila Óptima - Artículos a Llevar</h3>
+                <h3>Mochila Óptima - Artículos a Llevar</h3>
 
                 <div class="mochilas-visual">
                     <div class="mochila">
@@ -568,7 +568,7 @@
                 </div>
 
                 <div class="key-insight">
-                    <strong>💡 Insight Clave:</strong> Los artículos 2 y 3 tienen la mejor combinación de 
+                    <strong>Insight Clave:</strong> Los artículos 2 y 3 tienen la mejor combinación de 
                     valor y peso. Aunque el artículo 1 tiene mayor valor absoluto (100), es demasiado pesado 
                     (52 libras) y no deja espacio para otros artículos. La solución óptima aprovecha mejor 
                     la capacidad disponible.
@@ -577,7 +577,7 @@
 
             <!-- SECCIÓN 3: FORMULACIÓN MATEMÁTICA -->
             <div class="section">
-                <h2>📐 Formulación Matemática</h2>
+                <h2>Formulación Matemática</h2>
 
                 <h3>Variables de Decisión</h3>
                 <div class="formula-box">
@@ -616,7 +616,7 @@ El peso total no puede exceder 60 libras
 
             <!-- SECCIÓN 4: ANÁLISIS COMPARATIVO -->
             <div class="section">
-                <h2>🔍 Análisis Comparativo</h2>
+                <h2>Análisis Comparativo</h2>
 
                 <h3>Método Óptimo vs Método Heurístico (Greedy)</h3>
 
@@ -664,7 +664,7 @@ El peso total no puede exceder 60 libras
                 </table>
 
                 <div class="key-insight">
-                    <strong>📊 Importante:</strong> El método heurístico (greedy) de seleccionar por mayor 
+                    <strong>Importante:</strong> El método heurístico (greedy) de seleccionar por mayor 
                     relación valor/peso NO garantiza la solución óptima en problemas de mochila 0/1. 
                     La solución correcta requiere programación lineal entera.
                 </div>
@@ -672,18 +672,18 @@ El peso total no puede exceder 60 libras
 
             <!-- SECCIÓN 5: EXPLICACIÓN INTUITIVA -->
             <div class="section">
-                <h2>💭 Explicación Intuitiva</h2>
+                <h2>Explicación Intuitiva</h2>
 
                 <div class="comparison-grid">
                     <div class="comparison-card">
-                        <h4>❌ ¿Por qué NO llevar Artículo 1?</h4>
+                        <h4>¿Por qué NO llevar Artículo 1?</h4>
                         <p>Aunque tiene el mayor valor (100), pesa 52 libras.</p>
                         <p>Si lo llevas, solo te quedan 8 libras, y no hay otra combinación mejor.</p>
                         <p>Mejor: llevar dos artículos más pequeños con mayor valor total.</p>
                     </div>
 
                     <div class="comparison-card">
-                        <h4>✅ ¿Por qué SÍ llevar Artículos 2 y 3?</h4>
+                        <h4>¿Por qué SÍ llevar Artículos 2 y 3?</h4>
                         <p>Artículo 2: Excelente relación valor/peso (2.609)</p>
                         <p>Artículo 3: Buen valor absoluto (70) con peso moderado (35)</p>
                         <p>Juntos: Maximizan valor (130) usando casi toda la capacidad (58/60)</p>
@@ -736,10 +736,10 @@ El peso total no puede exceder 60 libras
 
             <!-- SECCIÓN 6: CONCLUSIÓN -->
             <div class="section">
-                <h2>🎓 Conclusión y Recomendación</h2>
+                <h2>Conclusión y Recomendación</h2>
 
                 <div style="background: linear-gradient(135deg, #fff5f7 0%, #ffe0e6 100%); padding: 30px; border-radius: 10px;">
-                    <h3 style="color: #f5576c; margin-bottom: 15px;">📌 Respuesta Final</h3>
+                    <h3 style="color: #f5576c; margin-bottom: 15px;">Respuesta Final</h3>
                     <p style="font-size: 1.1em; line-height: 1.8; color: #333;">
                         <strong>El excursionista debe llevar los Artículos 2 y 3</strong> para maximizar el valor 
                         con respecto a su restricción de peso.
@@ -751,7 +751,7 @@ El peso total no puede exceder 60 libras
                         <li>✓ <strong>Artículo 2:</strong> Peso 23 libras, Valor 60</li>
                         <li>✓ <strong>Artículo 3:</strong> Peso 35 libras, Valor 70</li>
                         <li>= <strong>Total:</strong> Peso 58/60 libras, Valor 130 unidades</li>
-                        <li>📊 <strong>Utilización:</strong> 96% de la capacidad</li>
+                        <li><strong>Utilización:</strong> 96% de la capacidad</li>
                     </ul>
                 </div>
 
@@ -766,12 +766,12 @@ El peso total no puede exceder 60 libras
                         </ul>
                     </div>
                     <div style="background: #fff3cd; padding: 20px; border-radius: 8px; border-left: 5px solid #ff9800;">
-                        <p style="color: #856404;"><strong>⚠ Consideraciones</strong></p>
+                        <p style="color: #856404;"><strong>Consideraciones</strong></p>
                         <ul style="margin-top: 10px; list-style: none; color: #856404;">
-                            <li>⚠ Solo 2 libras de holgura</li>
-                            <li>⚠ Sin espacio para añadir</li>
-                            <li>⚠ Solución única óptima</li>
-                            <li>⚠ No hay alternativas mejores</li>
+                            <li>Solo 2 libras de holgura</li>
+                            <li>Sin espacio para añadir</li>
+                            <li>Solución única óptima</li>
+                            <li>No hay alternativas mejores</li>
                         </ul>
                     </div>
                 </div>
@@ -779,7 +779,7 @@ El peso total no puede exceder 60 libras
 
             <!-- SECCIÓN 7: APLICACIONES REALES -->
             <div class="section">
-                <h2>🌍 Aplicaciones Reales del Problema de Mochila</h2>
+                <h2>Aplicaciones Reales del Problema de Mochila</h2>
                 
                 <table>
                     <thead>
@@ -791,22 +791,22 @@ El peso total no puede exceder 60 libras
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>🚚 Logística</strong></td>
+                            <td><strong>Logística</strong></td>
                             <td>Cargar vehículos con máximo peso/volumen</td>
                             <td>Peso límite = Capacidad del vehículo</td>
                         </tr>
                         <tr style="background: #fff5f7;">
-                            <td><strong>💰 Finanzas</strong></td>
+                            <td><strong>Finanzas</strong></td>
                             <td>Seleccionar proyectos con presupuesto limitado</td>
                             <td>Presupuesto = Capacidad de la mochila</td>
                         </tr>
                         <tr>
-                            <td><strong>🏭 Manufactura</strong></td>
+                            <td><strong>Manufactura</strong></td>
                             <td>Optimizar producción con capacidad limitada</td>
                             <td>Horas de máquina = Peso límite</td>
                         </tr>
                         <tr style="background: #fff5f7;">
-                            <td><strong>🎮 Videojuegos</strong></td>
+                            <td><strong>Videojuegos</strong></td>
                             <td>Sistemas de inventario y equipamiento</td>
                             <td>Peso/espacio del inventario</td>
                         </tr>
@@ -817,7 +817,7 @@ El peso total no puede exceder 60 libras
 
         <!-- FOOTER -->
         <div class="footer">
-            <p><strong>📚 Taller 2: Problema de Optimización - Ejercicio de Mochila 0/1</strong></p>
+            <p><strong>Taller 2: Problema de Optimización - Ejercicio de Mochila 0/1</strong></p>
             <p style="margin-top: 10px; color: #999;">
                 Generado con Python • PuLP Solver • Programación Lineal Entera
             </p>
